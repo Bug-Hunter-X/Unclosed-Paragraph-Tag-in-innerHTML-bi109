@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    //Incorrectly using innerHTML to modify the content
+    document.getElementById("myDiv").innerHTML = "<p>This text replaces the div content, but the next line might fail.</p><p>This paragraph may not be correctly displayed due to a missing closing tag for the previous paragraph.</p>;
+  </script>
+</body>
+</html>
