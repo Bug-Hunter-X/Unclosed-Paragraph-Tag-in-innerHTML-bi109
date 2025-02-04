@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    // Correctly using innerHTML to modify the content
+    document.getElementById("myDiv").innerHTML = "<p>This text replaces the div content.</p><p>This paragraph is correctly displayed because all tags are closed.</p>";
+  </script>
+</body>
+</html>
